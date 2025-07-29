@@ -4,7 +4,7 @@
 3. 깃허브 업로드 및 배포
 
 ## 배포 링크
-<br>
+<br>https://midterm-3g6ciqiee6jnzqwygkzusa.streamlit.app/
 
 ## 설치 및 실행
 ```
@@ -19,3 +19,6 @@ streamlit run app.py
 SOLAR_API_KEY=your_solar_api_key_here
 ```
 
+## 파일
+app.py                       # 메인 애플리케이션
+sentiment_analysis_system.py # 감정 분석 모듈
