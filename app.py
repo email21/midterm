@@ -159,14 +159,14 @@ def setup_sidebar():
             st.write("대화 기록이 없습니다.")
         
         st.markdown("---")
-        # st.header("⚙️ 설정")
+        st.header("⚙️ 설정")
         
-        # # 감정 분석 토글 (현재는 항상 활성화)
-        # st.session_state.sentiment_analysis_enabled = st.checkbox(
-        #     "감정 분석 활성화",
-        #     value=True,
-        #     help="챗봇 답변에 대한 감정 분석을 표시합니다."
-        # )
+        # 감정 분석 토글 (현재는 항상 활성화)
+        st.session_state.sentiment_analysis_enabled = st.checkbox(
+            "감정 분석 활성화",
+            value=True,
+            help="챗봇 답변에 대한 감정 분석을 표시합니다."
+        )
 
 @st.cache_resource
 def load_chatbot():
@@ -202,8 +202,7 @@ def main():
             # 대화 기록 표시
             st.header("💬 대화")
             if st.session_state.messages:
-                with st.container(height=400):
-                    display_conversation_history()
+                display_conversation_history()
             else:
                 st.info("💡 안녕하세요! 궁금한 것이 있으면 언제든 물어보세요.")
             
