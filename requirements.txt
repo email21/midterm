@@ -1,7 +1,0 @@
-streamlit
-langchain-upstage
-langchain-core
-tokenizers
-transformers
-python-dotenv
-torch
